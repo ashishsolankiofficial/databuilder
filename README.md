@@ -1,2 +1,2 @@
 # databuilder
-Scripts for making datasets
+Scripts for combining datasets
