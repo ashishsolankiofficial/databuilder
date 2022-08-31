@@ -29,7 +29,7 @@ for f in range(1, 5):
                 restaurant_detail["longitude"] = restaurant_detail["location"][
                     "longitude"
                 ]
-                restaurant_detail["zipcode"] = restaurant_detail["location"]["zipcode"]
+                restaurantgit_detail["zipcode"] = restaurant_detail["location"]["zipcode"]
                 restaurant_detail["country_id"] = restaurant_detail["location"][
                     "country_id"
                 ]
@@ -55,7 +55,6 @@ for f in range(1, 5):
 
 
 df_master = pd.DataFrame(master_restaurant)
-# df_master = df_master.iloc[:, 1:]
 df_master.drop(df_master[df_master.country_id != 1].index, inplace=True)
 df_master.drop_duplicates(subset=["name", "id"], keep=False, inplace=True)
 df_master.to_csv("file1.csv", index=False)
