@@ -29,7 +29,7 @@ for f in range(1, 5):
                 restaurant_detail["longitude"] = restaurant_detail["location"][
                     "longitude"
                 ]
-                restaurantgit_detail["zipcode"] = restaurant_detail["location"]["zipcode"]
+                restaurant_detail["zipcode"] = restaurant_detail["location"]["zipcode"]
                 restaurant_detail["country_id"] = restaurant_detail["location"][
                     "country_id"
                 ]
